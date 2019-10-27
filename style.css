@@ -1,0 +1,209 @@
+body {
+  font-family: Arial;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#welcomePage {
+  background-image: url("./images/background-cave-clouds-949193.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 3.5em;
+  margin-bottom: 25px;
+}
+
+.introButton {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #2c3e50;
+  padding: 5px 8px;
+  font-size: 1.4em;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.introButton:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+  border-color: #fff;
+}
+
+/*Custom - Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#mainContent {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgb(44, 62, 80) !important;
+}
+
+.jumbotron {
+  color: #2c3e50;
+  background: #ecf0f1;
+  margin-top: 36px;
+}
+
+.cameraIcon {
+  font-size: 1.1em;
+}
+
+.jumbotron h1 {
+  font-size: 3.5em;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+}
+
+nav .navbar-nav li a {
+  color: #fff;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#brand {
+  color: #fff;
+}
+
+#brand:hover {
+  color: #c5c4c4;
+}
+
+/*Lightbox Gallery */
+
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.gallery-block.compact-gallery .item {
+  overflow: hidden;
+  margin-bottom: 0;
+  background: #fff;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+@media (min-width: 576px) {
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+/*Footer*/
+
+.footer {
+  color: #fff;
+  background-color: #2c3e50;
+  width: 100%;
+  height: 112px;
+  bottom: 0;
+  left: 0;
+  margin-top: 36px;
+}
+
+.footer a {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 29px;
+  margin-right: 7px;
+  padding-top: 5px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.footer a:hover {
+  color: #a9a9a9;
+}
