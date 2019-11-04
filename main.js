@@ -2,10 +2,10 @@ $(document).ready(function() {
   baguetteBox.run(".compact-gallery", { animation: "slideIn" });
 
   // Add scrollspy to <body>
-  $("body").scrollspy({ target: ".navbar .button", offset: 50 });
+  $("body").scrollspy({ target: ".navbar", offset: 50 });
 
   // Add smooth scrolling on all links inside the navbar
-  $("#welcomePage a, #navbar a").on("click", function(event) {
+  $("a").on("click", function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
