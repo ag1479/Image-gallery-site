@@ -29,8 +29,3 @@ $(document).ready(function() {
     } // End if
   });
 });
-
-// // Adding 'active' classes on the nav links
-// $('#navbar').on('click,'a',function(){
-//   $('#navbar a.active').removeClass('active');
-//   $(this).addClass('active';)
